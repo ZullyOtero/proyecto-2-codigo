@@ -26,7 +26,7 @@ a {
 
 body {
     font-family: 'Lato', sans-serif;
-    background-color:  #cef9b0;
+    background-color:  #e8fdda;
     font-size: 18px;
     line-height: 1.2;
     display: flex;
@@ -175,7 +175,7 @@ transition: background-color 0.3s;
 }
 
 body.change-background {
-    background-image: linear-gradient(red 10%, 30%, blue 90%);
+    background-image: linear-gradient(yellow 10%, green 75%, blue 92%);
 
 }
 
