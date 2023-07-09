@@ -1,0 +1,293 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+}
+
+/* Para quitar los puntos a los items de listas */
+ul {
+    list-style: none;
+   
+    }
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color:  #cef9b0;
+    font-size: 18px;
+    line-height: 1.2;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    }
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 3px 10px -5px #5f5f5f;
+}
+
+   
+main {width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+#footer {
+    background-color: #004aad;
+    color: #fbfbfb;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        
+}
+
+ img.logo {
+    width: 30%;
+    max-width: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: flex-end;
+       
+}
+
+ul#menu {
+    font-size: 16px;
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+#inicio {
+    min-height: 100vh;
+    padding: 110px 20px;
+    
+}
+
+#contacto {
+    min-height: 100vh;
+    max-width: 1000%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    
+}
+
+li.menu-Item {
+    padding: 10%;
+}
+
+h1 {
+    font-size: 36px;
+
+}
+
+h2 {
+    font-size: 28px;
+
+}
+
+p {
+    padding: 20px 20px;
+   }
+
+img.fotozully {
+    width: 400px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    max-width: 100%;
+    }
+
+
+
+a.btn {
+    background-color: #004aad;
+    color: #fbfbfb;
+    font-size: 20px;
+    padding: 12px 20px;
+    border-radius: 50px;
+    display: inline-block;
+
+}
+
+
+div.hablemos{
+    background-color: #0cc0df;
+    color: #0f0f0f;
+    margin: 10%;
+    padding: 20px 0px;
+    width: 80%;
+    max-width: 300%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    }
+
+img.iconos {
+    width: 80px;
+   }
+
+.hablame {
+    margin: 10%;
+    padding: 20px 20px;
+    width: 80%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+
+li.menu-Item:hover,
+li.menu-Item a.active,
+a.btn:hover { background: rgba(9, 142, 191, 0.5);
+transition: background-color 0.3s;
+}
+
+body.change-background {
+    background-image: linear-gradient(red 10%, 30%, blue 90%);
+
+}
+
+/*desktop*/
+@media (min-width:1024px) { section#inicio {
+                            display: flex; flex-direction: row;
+                            padding: 150px 60px;
+                            }
+
+                        a.inicio {
+                            padding: 20%;
+                        }
+
+                        article {width: 50%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            }
+                        .presentacion { display: flex;
+                            flex-direction: column;
+                            text-align: left;
+                            padding-left: 10%; }
+                        h1 {font-size: 48px;
+                            align-self: self-start;
+                            padding-left: 5%;}
+
+                        h2 {font-size: 32px;
+                            }
+
+                        a.btn {display: flex;                            
+                            max-width: 190px;
+                            margin-left: 5%;
+                        }
+                        #contacto {
+                            max-width: 80%;
+                            margin-left: 3%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            align-content: center;
+                            padding: 20px 0px;
+                            }
+
+                        div.hablemos {
+                            margin-left: 30%;
+                        }
+
+                        .hablame {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            width: 170%;
+                            max-width: 360%;
+                            margin: 0%;
+                                            
+                            }
+
+}
+/* tablet*/
+@media (min-width:321px)(max-width:1023px){ section#inicio {
+    display: flex; flex-direction: row;
+    padding: 400px 60px;
+    }
+
+a.inicio {
+    padding: 20%;
+}
+
+article {width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+.presentacion { display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 10%; }
+h1 {font-size: 48px;
+    align-self: self-start;
+    padding-left: 5%;}
+
+h2 {font-size: 32px;
+    }
+
+a.btn {display: flex;                            
+    max-width: 190px;
+    margin-left: 5%;
+}
+#contacto {
+    max-width: 80%;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 20px 0px;
+    }
+
+div.hablemos {
+    margin-left: 30%;
+}
+
+.hablame {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 170%;
+    max-width: 320%;
+    margin: 0%;
+                    
+    }
+
+}
