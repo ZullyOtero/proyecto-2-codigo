@@ -175,9 +175,10 @@ transition: background-color 0.3s;
 }
 
 body.change-background {
-    background-image: linear-gradient(yellow 10%, green 75%, blue 92%);
+    background-image: linear-gradient(70deg, rgb(74, 74, 236), rgb(161, 99, 161));
+      }
+      
 
-}
 
 /*desktop*/
 @media (min-width:1024px) { section#inicio {
